@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./front-page.css";
+import { useNavigate } from "react-router";
 const FrontPage: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -13,13 +14,14 @@ const FrontPage: React.FC = () => {
   }); // Added state for selected suggestion
   const [uploadedFileName, setUploadedFileName] = useState<string>("");
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const suggestions = [
-    { id: 11675, name: "Teanga" },
-    { id: 11615, name: "Linguistica(Slovenia)" },
-    { id: 211, name: "Synergies Algerie" },
-    { id: 599, name: "Temes de Disseny" },
-    { id: 773, name: "Breast Cancer Research" },
+    { id: 27869, name: "Teanga" },
+    { id: 38949, name: "Linguistica(Slovenia)" },
+    { id: 19987, name: "Synergies Algerie" },
+    { id: 28582, name: "Temes de Disseny" },
+    { id: 41534, name: "Breast Cancer Research" },
   ];
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
@@ -30,7 +32,7 @@ const FrontPage: React.FC = () => {
     }
   };
   const handleSearchTermChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const term = event.target.value.toLowerCase();
     setSearchTerm(term);
@@ -46,7 +48,7 @@ const FrontPage: React.FC = () => {
   const handleSubmit = () => {
     const id = selectedSuggestion.id;
     if (id !== null) {
-      console.log("ID: ", id);
+      navigate(`/rules/${id}`);
     }
   };
   const getSuggestions = () => {
@@ -55,7 +57,7 @@ const FrontPage: React.FC = () => {
       return suggestions;
     }
     return suggestions.filter((suggestion) =>
-      suggestion.name.toLowerCase().startsWith(lowerSearchTerm),
+      suggestion.name.toLowerCase().startsWith(lowerSearchTerm)
     );
   };
 
