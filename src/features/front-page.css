@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgb(228, 235, 238);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  max-height: 75 vh;
+  overflow-y: auto;
+}
+
+.file-upload-label {
+  background-color: rgb(244, 246, 248);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background-color: rgb(159, 203, 222);
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.submit-button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(244, 246, 248);
+}
+.submit-button:hover {
+  background-color: rgb(159, 203, 222);
+}
+
+.dropdown-container {
+  position: absolute;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
