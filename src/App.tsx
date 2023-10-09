@@ -1,10 +1,10 @@
-import React from "react";
 import "./App.css";
+import FrontPage from "./features/front-page";
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <FrontPage />
     </>
   );
 }
