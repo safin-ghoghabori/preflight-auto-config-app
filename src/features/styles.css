@@ -1,0 +1,6 @@
+.rules-container {
+  min-height: 100vh;
+  width: 800px;
+  border: 1px solid green;
+  margin: 0 auto;
+}

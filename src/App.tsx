@@ -1,9 +1,10 @@
-import "./App.css";
+import React from "react";
+import { Rules } from "./features/Rules";
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Rules />
     </>
   );
 }
