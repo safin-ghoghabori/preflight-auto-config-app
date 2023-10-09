@@ -1,41 +1,53 @@
 {
-  "hash": "07aaa428",
-  "browserHash": "ca32b550",
+  "hash": "fa826378",
+  "browserHash": "f43cd74d",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "4e5c6d1a",
+      "fileHash": "7499d9b9",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "36b32963",
+      "fileHash": "5f9c835d",
       "needsInterop": true
     },
     "react-bootstrap/Accordion": {
       "src": "../../node_modules/react-bootstrap/esm/Accordion.js",
       "file": "react-bootstrap_Accordion.js",
-      "fileHash": "9a6b3ea6",
+      "fileHash": "e54f5a40",
       "needsInterop": false
     },
     "@elastic/elasticsearch": {
       "src": "../../node_modules/@elastic/elasticsearch/index.js",
       "file": "@elastic_elasticsearch.js",
-      "fileHash": "d5443ee7",
+      "fileHash": "cc1dd6fa",
       "needsInterop": true
     },
     "axios": {
       "src": "../../node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "41b62cca",
+      "fileHash": "71b25b69",
       "needsInterop": false
     },
     "react-bootstrap/esm/Accordion": {
       "src": "../../node_modules/react-bootstrap/esm/Accordion.js",
       "file": "react-bootstrap_esm_Accordion.js",
-      "fileHash": "98a9d6d9",
+      "fileHash": "8d86dc1b",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "47f5ea0e",
+      "needsInterop": false
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/index.js",
+      "file": "react-router.js",
+      "fileHash": "ecd7bd87",
       "needsInterop": false
     }
   },
@@ -45,6 +57,9 @@
     },
     "chunk-DZXRV6RW": {
       "file": "chunk-DZXRV6RW.js"
+    },
+    "chunk-JJL4IDR7": {
+      "file": "chunk-JJL4IDR7.js"
     },
     "chunk-ZAUFE7H7": {
       "file": "chunk-ZAUFE7H7.js"

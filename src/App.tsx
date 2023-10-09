@@ -1,14 +1,16 @@
 import React from "react";
 import { Rules } from "./features/Rules";
-import "./App.css";
 import FrontPage from "./features/front-page";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Rules />
-      <FrontPage />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<FrontPage />}></Route>
+        <Route path="/rules/:id" element={<Rules />} />
+      </Routes>
+    </Router>
   );
 }
 
