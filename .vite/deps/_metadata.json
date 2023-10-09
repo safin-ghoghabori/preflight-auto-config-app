@@ -1,23 +1,56 @@
 {
-  "hash": "b40fc0de",
-  "browserHash": "6949f9a0",
+  "hash": "07aaa428",
+  "browserHash": "ca32b550",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "9f5210b2",
+      "fileHash": "4e5c6d1a",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "ede180a6",
+      "fileHash": "36b32963",
       "needsInterop": true
+    },
+    "react-bootstrap/Accordion": {
+      "src": "../../node_modules/react-bootstrap/esm/Accordion.js",
+      "file": "react-bootstrap_Accordion.js",
+      "fileHash": "9a6b3ea6",
+      "needsInterop": false
+    },
+    "@elastic/elasticsearch": {
+      "src": "../../node_modules/@elastic/elasticsearch/index.js",
+      "file": "@elastic_elasticsearch.js",
+      "fileHash": "d5443ee7",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "41b62cca",
+      "needsInterop": false
+    },
+    "react-bootstrap/esm/Accordion": {
+      "src": "../../node_modules/react-bootstrap/esm/Accordion.js",
+      "file": "react-bootstrap_esm_Accordion.js",
+      "fileHash": "98a9d6d9",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-HQYZZ6R6": {
-      "file": "chunk-HQYZZ6R6.js"
+    "chunk-DQZUBBQG": {
+      "file": "chunk-DQZUBBQG.js"
+    },
+    "chunk-DZXRV6RW": {
+      "file": "chunk-DZXRV6RW.js"
+    },
+    "chunk-ZAUFE7H7": {
+      "file": "chunk-ZAUFE7H7.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
     }
   }
 }
