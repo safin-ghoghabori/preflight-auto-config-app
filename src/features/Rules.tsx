@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import data from "./journal_specs_test.json";
-import { fieldMapping } from "./constant";
+import { fieldMapping } from "./Constant";
 import Accordion from "react-bootstrap/esm/Accordion";
 import "./styles.css";
 import { useParams } from "react-router";
