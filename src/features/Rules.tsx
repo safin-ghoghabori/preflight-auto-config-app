@@ -1,9 +1,10 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import data from "./journal_specs_test.json";
 import { fieldMapping } from "./Constant";
 import Accordion from "react-bootstrap/esm/Accordion";
 import "./styles.css";
 import { useParams } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 export interface DataObject {
   id: string;
@@ -11,9 +12,12 @@ export interface DataObject {
   [key: string]: any;
 }
 
+
+
 export const Rules = () => {
   const [rules, setRules] = useState<DataObject | undefined>();
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
 
   const searchById = (id: string): DataObject | undefined => {
     return data.find((obj) => obj.id === id);
@@ -27,7 +31,7 @@ export const Rules = () => {
   }, [id]);
 
   return (
-    <div style={{ backgroundColor: "#f4f5f8", height: "100%" }}>
+    <div className = "parent-div" style={{ backgroundColor: "#f4f5f8", height: "100%" }}>
       <div className="rules-container">
         <h3 className="rules-title" style={{ paddingTop: "20px" }}>
           The journal you selected needs the following checks:
@@ -68,8 +72,28 @@ export const Rules = () => {
                 ) : null;
               }
             )}
+            {/* Add a message when all rules are null or false */}
+            {Object.entries(fieldMapping).every(([_, { fields }]) => {
+              return fields.every(
+                (field) => rules[field] === false || rules[field] === null
+              );
+            }) && (
+              <p className="errorMessage">
+                No journal specific author guidelines found. Please go ahead
+                with general guidelines on{" "}
+                <a
+                  className="errorLink"
+                  href="https://preflight.paperpal.com/partner/paperpal/generic"
+                >
+                  preflight.
+                </a>
+              </p>
+            )}
           </div>
         )}
+        <button className="back-button" onClick={() => navigate("/")}>
+          Check another Journal
+        </button>
       </div>
     </div>
   );
