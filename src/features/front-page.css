@@ -45,7 +45,8 @@
 
 .dropdown-container {
   position: absolute;
-
+  max-height: 400px;
+  overflow-y: auto;
   border: 1px solid #ccc;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -55,8 +56,9 @@
 .dropdown-item {
   padding: 8px 12px;
   cursor: pointer;
+  background-color: #f0f0f0;
 }
 
 .dropdown-item:hover {
-  background-color: #f2f2f2;
+  background-color: #cdcaca;
 }
