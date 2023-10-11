@@ -6,8 +6,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" Component={FrontPage}></Route>
-        <Route path="/rules/:id" element={<Rules />} />
+        <Route path="/preflight-auto-config-app" Component={FrontPage}></Route>
+        <Route
+          path="/preflight-auto-config-app/rules/:id"
+          element={<Rules />}
+        />
       </Routes>
     </Router>
   );

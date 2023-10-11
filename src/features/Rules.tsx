@@ -12,8 +12,6 @@ export interface DataObject {
   [key: string]: any;
 }
 
-
-
 export const Rules = () => {
   const [rules, setRules] = useState<DataObject | undefined>();
   const { id } = useParams<{ id: string }>();
@@ -31,7 +29,10 @@ export const Rules = () => {
   }, [id]);
 
   return (
-    <div className = "parent-div" style={{ backgroundColor: "#f4f5f8", height: "100%" }}>
+    <div
+      className="parent-div"
+      style={{ backgroundColor: "#f4f5f8", height: "100%" }}
+    >
       <div className="rules-container">
         <h3 className="rules-title" style={{ paddingTop: "20px" }}>
           The journal you selected needs the following checks:
@@ -91,7 +92,10 @@ export const Rules = () => {
             )}
           </div>
         )}
-        <button className="back-button" onClick={() => navigate("/")}>
+        <button
+          className="back-button"
+          onClick={() => navigate("/preflight-auto-config-app")}
+        >
           Check another Journal
         </button>
       </div>

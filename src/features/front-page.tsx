@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import suggestionData from "./journal_data.json"
+import suggestionData from "./journal_data.json";
 import "./front-page.css";
 import { useNavigate } from "react-router";
 
@@ -19,7 +19,7 @@ const FrontPage: React.FC = () => {
 
   const navigate = useNavigate();
 
-  const suggestions = suggestionData
+  const suggestions = suggestionData;
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
@@ -48,7 +48,7 @@ const FrontPage: React.FC = () => {
   const handleSubmit = () => {
     const id = selectedSuggestion.id;
     if (id !== null) {
-      navigate(`/rules/${id}`);
+      navigate(`/preflight-auto-config-app/rules/${id}`);
     }
   };
 
