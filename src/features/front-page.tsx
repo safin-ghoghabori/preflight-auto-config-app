@@ -65,7 +65,10 @@ const FrontPage: React.FC = () => {
   return (
     <div className="container">
       <div>
-        <img alt="Logo" src="src/assets/logo.png" />
+        <img
+          alt="Logo"
+          src="https://github.com/safin-ghoghabori/preflight-auto-config-app/assets/124050852/8ba73841-8b0d-4e51-87c3-d038c72cdbc4"
+        />
       </div>
       <div>
         <h3>Get closer to journal acceptance in minutes</h3>
