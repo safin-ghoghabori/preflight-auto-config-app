@@ -3,7 +3,6 @@
   background-color: rgb(228, 235, 238);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -13,6 +12,14 @@
   flex-direction: column;
   min-height: 100vh;
   gap: 20px;
+}
+
+input.search-bar {
+  height: 48px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 8px;
 }
 
 .file-upload-label {
@@ -47,18 +54,20 @@
   position: absolute;
   max-height: 400px;
   overflow-y: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #aaa;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 10px;
 }
 
 .dropdown-item {
   padding: 8px 12px;
   cursor: pointer;
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 .dropdown-item:hover {
-  background-color: #cdcaca;
+  background-color: hsl(225, 100%, 88%);
 }
