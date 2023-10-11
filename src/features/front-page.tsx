@@ -65,7 +65,7 @@ const FrontPage: React.FC = () => {
   return (
     <div className="container">
       <div>
-        <img alt="Logo" src="src/features/logo.png" />
+        <img alt="Logo" src="src/assets/logo.png" />
       </div>
       <div>
         <h3>Get closer to journal acceptance in minutes</h3>
