@@ -78,7 +78,7 @@ const FrontPage: React.FC = () => {
           Select journal
         </label>
         <input
-          style={{ marginLeft: "10px" }}
+          className="search-bar"
           name="search-bar"
           type="text"
           value={searchTerm}
